@@ -1,0 +1,115 @@
+---
+- summary: |
+    Проверка авторизации по логину и паролю
+  requirement: |
+    При верном вводе логине и пароля пользователь должен войти в систему
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Email = gomer51@mail.ru Password = 12312345
+  steps: 
+    - Нажать Sign In
+    - Вводим логин
+    - Вводим пароль
+    - Нажимаем кнопку «Submit»
+  expected-result: >
+    Пользователь должен попасть на главную страницу LOBBY.
+    
+    - summary: |
+    Проверка входа с несуществующим логином и паролем
+  requirement: |
+    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
+  prerequisites:
+    Открыта страница Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Email = asdqwevjf2@mail.eu Password = 123qwer45t
+  steps:
+    - Нажать Sign In
+    - Вводим логин
+    - Вводим пароль
+    - Нажимаем кнопку «Submit»
+  expected-result: |
+    Должено отобразиться сообщение EMAIL_NOT_FOUND.
+    
+    - summary: |
+    Проверка авторизации через Discord
+  requirement: |
+    После регистрации аккаунта в Discord пользователь должен войти в систему
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Email = gomer51@mail.ru Password = 12312345   # для регистрации
+  steps: 
+    - Открыта страница логина https://codebattle.hexlet.io
+    - Нажать "Sign in with Discord"
+    - На редиректе Discord нажать "Авторизовать"
+  expected-result: >
+    Успешная авторизация через аккаунт Discord
+    
+    - summary: |
+    Проверка игры с ботом.
+  requirement: |
+    Пользователь должен иметь возможность играть с ботом
+  prerequisites: |
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+  Логин = gomer51@mail.ru Пароль= 12312345
+  steps: 
+    - Войти в аккаунт
+    - Нажать Create a game
+    - Выбрать With a Bot
+    - Нажать Create  battle
+  expected-result: |
+    Начнётся игра с ботом.
+    
+    - summary: |
+    Проверка игры с пользователем
+  requirement: |
+    Пользователь должен иметь возможность играть с реальным пользователем по сети.
+  prerequisites: |
+    Открыть страницу https://codebattle.hexlet.io/
+  test-data: |
+    Логин = gomer51@mail.ru Пароль = 12312345
+  steps:
+    - Войти в аккаунт
+    - Нажать Create a game
+    - Выбрать With other users
+    - Нажать Create  battle
+  expected-result: |
+    Начнётся игра с пользователем.
+    
+    - summary: |
+    Проверка смены языков
+  requirement: |
+    Пользователь должен иметь возможность выбора языка
+  prerequisites: |
+    Открыть страницу https://codebattle.hexlet.io/
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - В Lobby, выбрать из списка любого, ожидающего игры бота
+    - Запустить игру с ботом.
+    - Открыть вкладку TASK 
+    - Нажать Accordeon "EN" # по умолчанию английский
+    - Выбрать RU
+  expected-result: |
+    Условия задачи должны быть переведены на русский язык.
+    
+    - summary: |
+    Мобильная версия
+  requirement: |
+    Пользователь должен использовать мобильную версию
+  prerequisites: |
+    Смартфон Iphone 11, версия Ios 16.3, Chrome 110.0.5481.83     
+  test-data: | 
+    Открыть страницу https://codebattle.hexlet.io/
+  steps:
+    - Войти в аккаунт
+    - Нажать Create a game
+    - Выбрать With a Bot
+    - Нажать Create  battle
+    - проверка корректного отображения информации
+    - все окна расположенны симметрично
+    - время отклика
+  expected-result: |
+    Мобильное приложение работает.
