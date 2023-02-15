@@ -1,30 +1,30 @@
 ---
 - summary: |
     Проверка авторизации по логину и паролю
-  status: pass
+status: pass
   
 - summary: |
     Проверка входа с несуществующим логином и паролем
-  status: pass
+status: pass
   
 - summary: |
     Проверка авторизации через Discord
-  status: fail
+status: fail
   
 - summary: |
     Проверка игры с пользователем
-  status: pass
+status: pass
   
 - summary: |
     Победитель игры
-  status: pass
+status: pass
   
 - summary: |
     Проверка смены языков
-  status: pass
+status: pass
   
 - summary: |
     Мобильная версия
-  status: pass
+status: pass
   
   
