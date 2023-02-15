@@ -3,23 +3,23 @@
     Проверка авторизации по логину и паролю
   status: pass
   
-  - summary: |
+- summary: |
     Проверка входа с несуществующим логином и паролем
   status: pass
   
-  - summary: |
+- summary: |
     Проверка авторизации через Discord
   status: fail
   
-  - summary: |
+- summary: |
     Проверка игры с пользователем
   status: pass
   
-  - summary: |
+- summary: |
     Победитель игры
   status: pass
   
-  - summary: |
+- summary: |
     Проверка смены языков
   status: pass
   
