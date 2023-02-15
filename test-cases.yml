@@ -53,7 +53,7 @@
   prerequisites: |
     Открыта страница https://codebattle.hexlet.io/
   test-data: |
-  Логин = gomer51@mail.ru Пароль= 12312345
+    Логин = gomer51@mail.ru Пароль= 12312345
   steps: 
     - Войти в аккаунт
     - Нажать Create a game
