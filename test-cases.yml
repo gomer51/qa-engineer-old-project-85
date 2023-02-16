@@ -113,3 +113,32 @@
     - время отклика
   expected-result: |
     Мобильное приложение работает.
+
+- summary: |
+    Просмотр своего пррфиля
+  requirement: |
+    Пользователь должен иметь возможность просмотреть профиль
+  prerequisites: |
+    Открыть страницу https://codebattle.hexlet.io/
+  test-data: |
+    https://codebattle.hexlet.io/users/9370
+  steps:
+    - на главной странице нажать на иконку своего профиля
+    - в появившемся окне нажать на "my profile"
+  expected-result: |
+    Пользователь должен увиеть свой профиль.
+    
+- summary: |
+    Просмотр чужого пррфиля
+  requirement: |
+    Пользователь должен иметь возможность просмотреть чужой профиль
+  prerequisites: |
+    Открыть страницу https://codebattle.hexlet.io/
+  test-data: |
+    https://codebattle.hexlet.io/#lobby
+  steps:
+    - В Lobby, выбрать из списка "Online players" любой профиль
+    - нажать на никнэм игрока
+  expected-result: |
+     Пользователь должен увидеть профиль игрока.
+     
