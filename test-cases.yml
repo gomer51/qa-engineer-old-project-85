@@ -142,3 +142,19 @@
   expected-result: |
      Пользователь должен увидеть профиль игрока.
      
+- summary: |
+    Просмотр истории игр
+  requirement: |
+    Пользователь должен иметь возможность просмотреть историю игр
+  prerequisites: |
+    Открыть страницу https://codebattle.hexlet.io/
+  test-data: |
+    https://codebattle.hexlet.io/users/9370
+  steps:
+    - на главной странице нажать на иконку своего профиля
+    - в появившемся окне нажать на "my profile"
+    - нажать на вкладку "COMPLETED GAMES"
+  expected-result: |
+     Пользователь должен увидеть свою историю игр.
+     
+     
