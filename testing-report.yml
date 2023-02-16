@@ -21,8 +21,40 @@
   
 - summary: |
     Проверка смены языков
-  status: pass
+  status: fail
   
 - summary: |
     Мобильная версия
   status: pass
+
+- summary: |
+    Просмотр своего пррфиля
+  status: pass
+  
+- summary: |
+    Просмотр чужого пррфиля
+  status: pass
+  
+- summary: |
+    Просмотр истории игр
+  status: pass
+  
+- summary: |
+    Сохранение изменении настроек
+  status: pass  
+  
+- summary: |
+    Отображение и сортировка рейтинга за неделю
+  status: pass  
+  
+- summary: |
+    Отображение и сортировка рейтинга за месяц
+  status: pass  
+  
+- summary: |
+    Отображение и сортировка общего рейтинга пользователей
+  status: pass  
+  
+- summary: |
+    Проверка отправки сообщении в чат
+  status: pass 
